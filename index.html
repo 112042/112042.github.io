@@ -1,197 +1,178 @@
-<!--index.html-->
 <!DOCTYPE html>
 <html>
-    <title>計概檢討</title>
-    <style>
-        table {
-          font-family: arial, sans-serif;
-          border-collapse: collapse;
-          width: 100%;
-        }
-        
-        td, th {
-          border: 1px solid #dddddd;
-          text-align: left;
-          padding: 8px;
-        }
-        
-        tr:nth-child(even) {
-          background-color: #dddddd;
-        }
-    </style>
+<title>1/18開會報告資訊</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<body id="myPage">
 
-<head><h1>網頁成績與檢討</h1></head>
-<body>
-    <p><h2>Tcp/Ip基本架構(Basic network architecture)</h2></p>
-    <table>
-        <tr>
-          <th>TCP/IP LAYER</th>
-          <th>Transmission unit</th>
-          <th>Protocol</th>
-          <th>Addressing</th>
-          <th>Device</th>
-          <th>OSI 7 layers</th>
-        </tr>
 
-        <tr>
-          <td>Application Layer</td>
-          <td>Data</td>
-          <td>FTP,HTTP,HTTPS,SMTP,POP3</td>
-          <td>HTTP(URL)</td>
-          <td>Gateway</td>
-          <td>Application,Presentation,Session</td>
-        </tr>
-       
-        <tr>
-            <td>Transport Layer</td>
-            <td>Segment(Data gram)</td>
-            <td>TCP,UPD,IPX</td>
-            <td>Port Number</td>
-            <td></td>
-            <td>Transport</td>
-        </tr>
+<!-- Image Header -->
+<div class="w3-display-container w3-animate-opacity">
+  <img src="notepad.jpg" alt="boat" style="width:100%;min-height:350px;max-height:600px;">
+  <div class="w3-container w3-display-bottomleft w3-margin-bottom">  
+    <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-xlarge w3-theme w3-hover-teal" title="Go To W3.CSS">開會資訊</button>
+  </div>
+</div>
 
-        <tr>
-            <td>Network Layer</td>
-            <td>Packet</td>
-            <td>IP,ARP,RARP,SPX,ICMP</td>
-            <td>IP address(IPv4 or IPv6)</td>
-            <td>Router</td>
-            <td>Network</td>
-          
-          <td></td>
-        </tr>
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-teal w3-display-container"> 
+      <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-teal w3-display-topright"><i class="fa fa-remove"></i></span>
+      <h4>論文報告資訊</h4>
+      <h5>實驗室:IDSL、AC_LAB <i class="fa fa-smile-o"></i></h5>
+    </header>
+    <div class="w3-container">
+      <p>開會時間:7:00~9:00</p>
+      <p>報告地點:MA314</p>
+      <p>報告順序: <a class="w3-text-teal" href="https://docs.google.com/spreadsheets/d/1q52pt9jKkMsgakgCcsfmp81O5PX4jX1Xlev1srdYy50/edit#gid=0">報告人</a> 表單</p>
+    </div>
+    <footer class="w3-container w3-teal">
+      <p>每個禮拜的星期二</p>
+    </footer>
+  </div>
+</div>
 
-        <tr>
-            <td>DataLink Layer</td>
-            <td>Frame</td>
-            <td>wired:802.3,802.4,802.5<br> wireless:802.11</td>
-             <td>MAC Address</td>
-            <td>Bridge(switch)</td>
-            <td>DataLink Layer</td>
-            
-        </tr>
-        
-        <tr>
-            <td>Physical Layer</td>
-            <td>Bit</td>
-            <td></td>
-            <td></td>
-            <td>Repeater(hub)</td>
-            <td>Physical Layer</td>
-        </tr> 
-      </table>
-      
-      <p><h2>OSI 7 layers and TCP/IP architecture</h2></p>
-
-    <table>
-        <tr>
-          <th>OSI 7 Layer</th>
-          <th>Features</th>
-          <th>功能特色</th>
-          <th>TCP/IP Layer</th>
-          <th>TCP/IP Layer</th>
-        </tr>
-
-        <tr>
-          <td>Application Layer</td>
-          <td>Provide a complete service<br>(including the structure of each layer)</td>
-          <td>提供完整的服務(含有各層的架構)</td>
-          <td>Application Layer</td>
-          <td>Application Layer</td>
-        </tr>
-
-        
-        <tr>
-            <td>Presentation Layer</td>
-            <td>(1). Internal code conversion<br>(2). Encryption/decryption<br>(3) Compression/decompression office</td>
-            <td>(1).內碼轉換<br>(2).加/解密<br>(3).壓縮/解壓所)</td>
-            <td>Application Layer</td>
-            <td>Application Layer</td>
-          </tr>
-
-          
-        <tr>
-            <td>Session Layer</td>
-            <td>(1). Communication before connection<br>(2). Establish a transmission channel between both parties</td>
-            <td>(1).連線前的溝通<br>(2).建立雙方的傳輸通道</td>
-            <td>Application Layer</td>
-            <td>Application Layer</td>
-          </tr>
-       
-        <tr>
-            <td>Transport Layer</td>
-            <td>(1). Flow control<br>(2). Error detection and handling<br>(3). Provide end-to-end transmission</td>
-            <td>(1).流量控管<br>(2).錯誤偵測與處理<br>(3).提供終端與終端的傳輸</td>
-            <td>Transport Layer</td>
-            <td>Transport Layer</td>
-        </tr>
-
-        <tr>
-            <td>Network Layer</td>
-            <td>(1). Addressing: Assign the name or location of the network device<br>(2). Routing: select the transmission path</td>
-            <td>(1).定址:賦予網路裝置名稱或位置<br>(2).路由:選擇傳送路徑</td>
-            <td>Network Layer</td>
-            <td>Network Layer</td>
-        </tr>
-
-        <tr>
-            <td>DataLink Layer</td>
-            <td>(1). Synchronization of sending and receiving<br>(2). Error control<br>(3). Provide point-to-point transmission</td>
-            <td>(1).收送同步化<br>(2).錯誤控制<br>(3).提供點對點傳輸</td>
-            <td>DataLink Layer</td>
-            <td>Physical Layer</td>
-        </tr>
-        
-        <tr>
-            <td>Physical Layer</td>
-            <td>(1). Wire<br>(2). Signal transmission</td>
-            <td>(1).線材<br>(2).訊號傳送</td>
-            <td>Physical Layer</td>
-            <td>Physical Layer</td>
-        </tr> 
-      </table>
-
-      <p><h2>Equipment introduction(設備介紹)</h2></p>
-
-    <table>
-        <tr>
-          <th>Device</th>
-          <th>Device Description</th>
-          <th>中文說明</th>
-        </tr>
-
-        <tr>
-          <td>Gateway</td>
-          <td>Used to connect two different types of networks</td>
-          <td>用以連接兩個異質性網路</td>
-        </tr>
-
-        
-        <tr>
-            <td>Router</td>
-            <td>(1).Used to connect two homogeneous networks<br>(2).Determine the transmission path of IP</td>
-            <td>(1).連接兩個同性質網路 <br>(2).決定IP的傳輸路徑</td>
-          </tr>
-
-          
-        <tr>
-            <td>Bridge</td>
-            <td>(1) Segments connecting multiple networks.<br>(2) Frame can be filtered to improve network efficiency</td>
-            <td>(1)連接多個網路的Segment.<br>(2)可過濾frame，提高網路效率</td>
-          </tr>
-       
-        <tr>
-            <td>Repeater</td>
-            <td>(1). Signal strength amplification<br>(2). Extend the transmission distance</td>
-            <td>(1).訊號強度放大<br>(2).延長傳輸距離</td>
-        </tr>
-      </table>
+<!-- Team Container -->
+<div class="w3-container w3-padding-64 w3-center" id="team">
+<h2>論文報告順序</h2>
+<table class="table table-hover" width="400">
+  <thead>
+    <tr>
+      <th scope="col" width="100" text-align="center">順序</th>
+      <th scope="col">報告人</th>
+      <th scope="col">實驗室</th>
+      <th scope="col">論文名稱</th>
+    </tr>
+  </thead>
+  <tbody>
     
-    <p><h2>成績分布</h2></p>
-    <p><h3>總平均：58.38</h3></p>
-    <iframe src="https://plotdb.io/v/chart/28209" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
-    <iframe src="https://plotdb.io/v/chart/28210" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
-    <iframe src="https://plotdb.io/v/chart/28211" width="100%" height="600px" allowfullscreen="true" frameborder="0"></iframe>
+    <tr>
+      <th scope="row">1</th>
+      <td width="100" >洪宜君 </td>
+      <td>IDSL</td>
+      <td><a href="https://ieeexplore-ieee-org.ezproxy.lib.ntust.edu.tw/document/9352234">An Enhanced Multi-Hop Intersection-Based Geographical Routing Protocol for the Internet of Connected Vehicles Network</a></td>
+    </tr>
+ 
+    <tr>
+      <th scope="row">2</th>
+      <td width="100">謝秀玟</td>
+      <td>IDSL</td>
+      <td><a href="https://ieeexplore.ieee.org/document/9492256">A Blockchain-based Framework for Information Management in Internet of Vehicles</a></td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td width="100"">陳菳峰</td>
+      <td>AC_LAB</td>
+      <td><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8876647">GDPR-Compliant Personal Data Management: A Blockchain-Based Solution</a></td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<!-- Work Row -->
+<div class="w3-row-padding w3-padding-64 w3-theme-l1" id="work">
+
+<div>
+<h2 style="text-align: center;">報告表單</h2>
+<p align="center">
+  <iframe style="text-align:center;display:auto;border:2px solid black;" src="https://docs.google.com/spreadsheets/d/1q52pt9jKkMsgakgCcsfmp81O5PX4jX1Xlev1srdYy50/edit#gid=0" height="1000" width="1000" ></iframe>
+</p>
+</div>
+</div>
+
+
+<!-- Container -->
+<div class="w3-container" style="position:relative">
+  <a onclick="w3_open()" class="w3-button w3-xlarge w3-circle w3-teal"
+  style="position:absolute;top:-28px;right:24px">+</a>
+</div>
+
+<!-- Pricing Row -->
+<div class="w3-row-padding w3-center w3-padding-64" id="pricing">
+    <h2>論文連結</h2>
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">An Enhanced Multi-Hop Intersection-Based Geographical Routing Protocol for the Internet of Connected Vehicles Network</p>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><a href="https://ieeexplore-ieee-org.ezproxy.lib.ntust.edu.tw/document/9352234"><i class="fa fa-check"></i> 前往</a></button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme-l2">
+          <p class="w3-xlarge">A Blockchain-based Framework for Information Management in Internet of Vehicles</p>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><a href="https://ieeexplore.ieee.org/document/9492256"><i class="fa fa-check"></i> 前往</a></button>
+        </li>
+      </ul>
+    </div>
+
+    <div class="w3-third w3-margin-bottom">
+      <ul class="w3-ul w3-border w3-hover-shadow">
+        <li class="w3-theme">
+          <p class="w3-xlarge">GDPR-Compliant Personal Data Management: A Blockchain-Based Solution</p>
+        </li>
+        <li class="w3-theme-l5 w3-padding-24">
+          <button class="w3-button w3-teal w3-padding-large"><a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=8876647"><i class="fa fa-check"></i> 前往</a></button>
+        </li>
+      </ul>
+    </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="16.png" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>以下功能只是裝飾用</h4>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-google-plus"></i></a>
+  <a class="w3-button w3-large w3-teal" href="javascript:void(0)" title="Google +"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="javascript:void(0)" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+  <p>此網頁只適用1/18</p>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
 </body>
 </html>
